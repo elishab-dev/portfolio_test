@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Castaway</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="/"
+          ><img class="logo" src="./assets/svg/logo.svg" alt="Castaway logo"
+        /></a>
+        <ul class="nav-list nav-list--header">
+          <li class="nav-list__item">
+            <a href="#hero-section" class="nav-list__link">Home</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#episodes-section" class="nav-list__link">Episodes</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#host-section" class="nav-list__link">Host</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#footer" class="nav-list__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero-section" class="hero">
+        <img
+          class="hero__img"
+          src="./assets/img/hero-img.jpg"
+          alt="a man leading a podcast"
+        />
+        <h1 class="title hero__title">
+          Take your podcast to the
+          <span class="underline-accent">next</span>
+          <span class="bold-accent">level</span>
+        </h1>
+        <p class="hero__socials-listing">Listed on</p>
+        <ul class="socials-list socials-list--hero">
+          <li class="socials-list__item">
+            <a
+              class="socials-list__link socials-list__link--spotify"
+              href="#"
+              aria-label="Spotify"
+            ></a>
+          </li>
+          <li class="socials-list__item">
+            <a
+              class="socials-list__link socials-list__link--pocket-casts"
+              href="#"
+              aria-label="Pocket Casts"
+            ></a>
+          </li>
+          <li class="socials-list__item">
+            <a
+              class="socials-list__link socials-list__link--soundcloud"
+              href="#"
+              aria-label="SoundCloud"
+            ></a>
+          </li>
+          <li class="socials-list__item">
+            <a
+              class="socials-list__link socials-list__link--apple-podcasts"
+              href="#"
+              aria-label="Apple Podcasts"
+            ></a>
+          </li>
+          <li class="socials-list__item">
+            <a
+              class="socials-list__link socials-list__link--overcast"
+              href="#"
+              aria-label="Overcast"
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <section id="episodes-section" class="episodes">
+        <h2 class="title episodes__title">Latest episodes</h2>
+        <button type="button" class="btn episodes__btn">
+          View all episodes
+        </button>
+        <ul class="episodes__list">
+          <li class="episode">
+            <article>
+              <img src="./assets/img/episode3.jpg" alt="outboard audio gear" />
+              <div class="episode__content">
+                <span class="episode__tag">Gear</span>
+                <p class="title-intro episode__number">Episode 3</p>
+                <h3 class="episode__title">
+                  Should you get outboard audio gear?
+                </h3>
+                <p class="episode__description">
+                  Is hardware really worth it when it comes to podcasting? The
+                  answer is...it depends. Here's our reasons on why you might
+                  want to consider picking something up.
+                </p>
+                <button type="button" class="episode__btn btn">
+                  View Episode Details
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="episode">
+            <article>
+              <img src="./assets/img/episode2.jpg" alt="a microphone photo" />
+              <div class="episode__content">
+                <span class="episode__tag">Tips &amp; Tricks</span>
+                <p class="title-intro episode__number">Episode 2</p>
+                <h3 class="episode__title">
+                  Mic tricks to take you to the next level
+                </h3>
+                <p class="episode__description">
+                  Stop rolling with those default settings on your mic. These
+                  small tweaks will take you from sounding good to great.
+                </p>
+                <button type="button" class="episode__btn btn">
+                  View Episode Details
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="episode">
+            <article>
+              <img
+                src="./assets/img/episode1.jpg"
+                alt="a photo of a man with a microphone"
+              />
+              <div class="episode__content">
+                <span class="episode__tag">Gear</span>
+                <p class="title-intro episode__number">Episode 1</p>
+                <h3 class="episode__title">The best microphone under $200</h3>
+                <p class="episode__description">
+                  With so many microphones on the market, how are you supposed
+                  to know what's the best? Take a look at our top picks.
+                </p>
+                <button type="button" class="episode__btn btn">
+                  View Episode Details
+                </button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section id="host-section" class="host">
+        <div class="host__content">
+          <button type="button" class="btn host__btn"></button>
+          <p class="title-intro host__intro">Meet your host</p>
+          <h2 class="title host__title">Jacob Paulaner</h2>
+          <p>
+            Jacob has a background in audio engineering, and has been podcasting
+            since the early days.
+          </p>
+          <p>
+            He's here to help you level up your game by sharing everything he's
+            learned along the way.
+          </p>
+        </div>
+        <img
+          src="./assets/img/host.jpg"
+          class="host__img"
+          alt="Portrait of podcast host Jacob Paulaner"
+        />
+      </section>
+      <section id="subscription-section" class="subscription">
+        <div class="subscription__content">
+          <p class="title-intro subscription__intro">Email Newsletter</p>
+          <h2 class="title subscription__title">Subscribe for updates</h2>
+        </div>
+        <form action="" id="subscription-form" class="subscription__form">
+          <label for="name" class="hidden">Name</label>
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <label for="email" class="hidden">Name</label>
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <button type="submit" class="btn subscription__btn">Submit</button>
+        </form>
+      </section>
+      <section id="reviews-section" class="reviews">
+        <ul class="reviews__list">
+          <li class="review">
+            <article class="review">
+              <div class="review__rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote class="review__description">
+                I can't recommend this podcast enough
+              </blockquote>
+              <cite class="review__author">Betty Lacey</cite>
+            </article>
+          </li>
+          <li class="reviews__item">
+            <article class="review">
+              <div class="review__rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote class="review__description">
+                Jacob is the best in the business
+              </blockquote>
+              <cite class="review__author">Adam Driver</cite>
+            </article>
+          </li>
+          <li class="reviews__item">
+            <article class="review">
+              <div class="review__rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote class="review__description">
+                A wealth of audio knowledge
+              </blockquote>
+              <cite class="review__author">Marcus Brown</cite>
+            </article>
+          </li>
+          <li class="reviews__item">
+            <article class="review">
+              <div class="review__rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote class="review__description">
+                Every episode is a gem!
+              </blockquote>
+              <cite class="review__author">Jessica Knowl</cite>
+            </article>
+          </li>
+          <li class="reviews__item">
+            <article class="review">
+              <div class="review__rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote class="review__description">
+                Whoa whoa, let me take some notes!
+              </blockquote>
+              <cite class="review__author">Scott Adams</cite>
+            </article>
+          </li>
+          <li class="reviews__item">
+            <article class="review">
+              <div class="review__rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <blockquote class="review__description">
+                I've upped my game considerably since I started listening
+              </blockquote>
+              <cite class="review__author">Steven Blast</cite>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <nav class="footer__nav">
+        <div class="footer__brand">
+          <a href="/"
+            ><img class="logo" src="./assets/svg/logo.svg" alt="Castaway logo"
+          /></a>
+          <ul class="socials-list socials-list--footer">
+            <li class="socials-list__item">
+              <a
+                class="socials-list__link socials-list__link--instagram"
+                href="#"
+                aria-label="Instagram"
+              ></a>
+            </li>
+            <li class="socials-list__item">
+              <a
+                class="socials-list__link socials-list__link--x"
+                href="#"
+                aria-label="X"
+              ></a>
+            </li>
+            <li class="socials-list__item">
+              <a
+                class="socials-list__link socials-list__link--facebook"
+                href="#"
+                aria-label="Facebook"
+              ></a>
+            </li>
+            <li class="socials-list__item">
+              <a
+                class="socials-list__link socials-list__link--spotify"
+                href="#"
+                aria-label="Spotify"
+              ></a>
+            </li>
+            <li class="socials-list__item">
+              <a
+                class="socials-list__link socials-list__link--apple-podcasts"
+                href="#"
+                aria-label="Apple Podcasts"
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <ul class="nav-list nav-list--footer">
+          <li class="nav-list__item">
+            <a href="#hero-section" class="nav-list__link">Home</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#episodes-section" class="nav-list__link">Episodes</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#host-section" class="nav-list__link">Host</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#nav-list" class="nav-list__link">Contact</a>
+          </li>
+        </ul>
+        <ul class="nav-list nav-list--docs">
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Style Guide</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Instructions</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Changelog</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Credit</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Powered by Webflow</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Licenses</a>
+          </li>
+        </ul>
+        <ul class="socials-list socials-list--footer">
+          <li class="socials__item">
+            <a
+              class="socials__link socials__link--spotify"
+              href="#"
+              aria-label="Listen on Spotify"
+            ></a>
+          </li>
+          <li class="socials-list__item">
+            <a
+              class="socials__link socials__link--pocket-casts"
+              href="#"
+              aria-label="Listen on Pocket Casts"
+            ></a>
+          </li>
+          <li class="socials-list__item">
+            <a
+              class="socials__link socials__link--soundcloud"
+              href="#"
+              aria-label="Listen on SoundCloud"
+            ></a>
+          </li>
+          <li class="socials__item">
+            <a
+              class="socials__link socials__link--apple-podcasts"
+              href="#"
+              aria-label="Listen on Apple Podcasts"
+            ></a>
+          </li>
+          <li class="socials__item">
+            <a
+              class="socials__link socials__link--overcast"
+              href="#"
+              aria-label="Listen on Overcast"
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
