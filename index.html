@@ -10,7 +10,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Castaway</title>
   </head>
   <body>
@@ -42,10 +42,10 @@
           src="./assets/img/hero-img.jpg"
           alt="a man leading a podcast"
         />
-        <h1 class="title hero__title">
+        <h1 class="hero__title">
           Take your podcast to the
-          <span class="underline-accent">next</span>
-          <span class="bold-accent">level</span>
+          <span class="hero__title-line">next</span>
+          <span class="hero__title-accent">level</span>
         </h1>
         <p class="hero__socials-listing">Listed on</p>
         <ul class="socials-list socials-list--hero">
@@ -87,18 +87,18 @@
         </ul>
       </section>
       <section id="episodes-section" class="episodes">
-        <h2 class="title episodes__title">Latest episodes</h2>
-        <button type="button" class="btn episodes__btn">
+        <h2 class="title title--prm episodes__title">Latest episodes</h2>
+        <button type="button" class="btn btn--prm episodes__btn">
           View all episodes
         </button>
         <ul class="episodes__list">
-          <li class="episode">
-            <article>
+          <li class="episode__item">
+            <article class="bg-rounded episode">
               <img src="./assets/img/episode3.jpg" alt="outboard audio gear" />
               <div class="episode__content">
                 <span class="episode__tag">Gear</span>
                 <p class="title-intro episode__number">Episode 3</p>
-                <h3 class="episode__title">
+                <h3 class="title title--scdr episode__title">
                   Should you get outboard audio gear?
                 </h3>
                 <p class="episode__description">
@@ -106,33 +106,33 @@
                   answer is...it depends. Here's our reasons on why you might
                   want to consider picking something up.
                 </p>
-                <button type="button" class="episode__btn btn">
+                <button type="button" class="btn btn--prm episode__btn">
                   View Episode Details
                 </button>
               </div>
             </article>
           </li>
-          <li class="episode">
-            <article>
+          <li class="episode__item">
+            <article class="bg-rounded episode">
               <img src="./assets/img/episode2.jpg" alt="a microphone photo" />
               <div class="episode__content">
                 <span class="episode__tag">Tips &amp; Tricks</span>
                 <p class="title-intro episode__number">Episode 2</p>
-                <h3 class="episode__title">
+                <h3 class="title title--scdr episode__title">
                   Mic tricks to take you to the next level
                 </h3>
                 <p class="episode__description">
                   Stop rolling with those default settings on your mic. These
                   small tweaks will take you from sounding good to great.
                 </p>
-                <button type="button" class="episode__btn btn">
+                <button type="button" class="btn btn--prm episode__btn">
                   View Episode Details
                 </button>
               </div>
             </article>
           </li>
-          <li class="episode">
-            <article>
+          <li class="episode__item">
+            <article class="bg-rounded episode">
               <img
                 src="./assets/img/episode1.jpg"
                 alt="a photo of a man with a microphone"
@@ -140,12 +140,14 @@
               <div class="episode__content">
                 <span class="episode__tag">Gear</span>
                 <p class="title-intro episode__number">Episode 1</p>
-                <h3 class="episode__title">The best microphone under $200</h3>
+                <h3 class="title title--scdr episode__title">
+                  The best microphone under $200
+                </h3>
                 <p class="episode__description">
                   With so many microphones on the market, how are you supposed
                   to know what's the best? Take a look at our top picks.
                 </p>
-                <button type="button" class="episode__btn btn">
+                <button type="button" class="btn btn--prm episode__btn">
                   View Episode Details
                 </button>
               </div>
@@ -155,14 +157,14 @@
       </section>
       <section id="host-section" class="host">
         <div class="host__content">
-          <button type="button" class="btn host__btn"></button>
+          <button type="button" class="btn btn--scdr host__btn"></button>
           <p class="title-intro host__intro">Meet your host</p>
-          <h2 class="title host__title">Jacob Paulaner</h2>
-          <p>
+          <h2 class="title title--prm host__title">Jacob Paulaner</h2>
+          <p class="host__description">
             Jacob has a background in audio engineering, and has been podcasting
             since the early days.
           </p>
-          <p>
+          <p class="host__description">
             He's here to help you level up your game by sharing everything he's
             learned along the way.
           </p>
@@ -173,23 +175,37 @@
           alt="Portrait of podcast host Jacob Paulaner"
         />
       </section>
-      <section id="subscription-section" class="subscription">
+      <section id="subscription-section" class="bg-rounded subscription">
         <div class="subscription__content">
           <p class="title-intro subscription__intro">Email Newsletter</p>
-          <h2 class="title subscription__title">Subscribe for updates</h2>
+          <h2 class="title title--prm subscription__title">
+            Subscribe for updates
+          </h2>
         </div>
         <form action="" id="subscription-form" class="subscription__form">
-          <label for="name" class="hidden">Name</label>
-          <input type="text" name="name" id="name" placeholder="Name" />
-          <label for="email" class="hidden">Name</label>
-          <input type="email" name="email" id="email" placeholder="Email" />
-          <button type="submit" class="btn subscription__btn">Submit</button>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            aria-label="name"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            aria-label="email"
+          />
+          <button type="submit" class="btn btn--prm subscription__btn">
+            Submit
+          </button>
         </form>
       </section>
       <section id="reviews-section" class="reviews">
         <ul class="reviews__list">
           <li class="review">
-            <article class="review">
+            <article class="bg-rounded review">
               <div class="review__rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -204,7 +220,7 @@
             </article>
           </li>
           <li class="reviews__item">
-            <article class="review">
+            <article class="bg-rounded review">
               <div class="review__rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -219,7 +235,7 @@
             </article>
           </li>
           <li class="reviews__item">
-            <article class="review">
+            <article class="bg-rounded review">
               <div class="review__rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -234,7 +250,7 @@
             </article>
           </li>
           <li class="reviews__item">
-            <article class="review">
+            <article class="bg-rounded review">
               <div class="review__rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -249,7 +265,7 @@
             </article>
           </li>
           <li class="reviews__item">
-            <article class="review">
+            <article class="bg-rounded review">
               <div class="review__rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -264,7 +280,7 @@
             </article>
           </li>
           <li class="reviews__item">
-            <article class="review">
+            <article class="bg-rounded review">
               <div class="review__rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>

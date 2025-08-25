@@ -1,0 +1,15 @@
+.hero__title {
+  font-size: var(--hero-title-fsz);
+  line-height: var(--hero-title-lh);
+  letter-spacing: var(--hero-title-ls);
+}
+
+.hero__title-accent {
+  font-weight: var(--bold-fw);
+  font-size: calc(var(--hero-title-fsz) + 0.62rem);
+}
+
+.hero__socials-listing {
+  font-size: var(--trt-fsz);
+  line-height: var(--hero-listing-lh);
+}
