@@ -1,0 +1,38 @@
+.host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.host__img-wrapper {
+  width: 100%;
+  height: 743px;
+  overflow: hidden;
+}
+
+.host__img {
+  height: 100%;
+  object-position: center;
+}
+
+.host__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 28px;
+}
+
+.host__intro {
+  margin-bottom: -28px;
+}
+
+.host__title + .host__description {
+  margin-bottom: 5px;
+}
+
+.host__btn {
+  width: 112px;
+  height: 112px;
+  margin-bottom: -8px;
+}

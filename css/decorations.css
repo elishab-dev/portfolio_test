@@ -1,0 +1,45 @@
+.decor::after {
+  content: '';
+  display: block;
+
+  position: absolute;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* hero title line */
+
+.hero__title-line::after {
+  width: 160px;
+  height: 11px;
+
+  bottom: -3px;
+  left: 0;
+
+  background-image: url('../assets/svg/hero-content-line.svg');
+}
+
+/* hero lines on a photo */
+
+.hero__layout::after {
+  width: 68px;
+  height: 74px;
+
+  top: -25px;
+  left: -25px;
+
+  background-image: url('../assets/svg/decoration-hero.svg');
+}
+
+/* subscription lines on a layout */
+
+.subscription__layout::after {
+  width: 147px;
+  height: 91px;
+
+  bottom: -40px;
+  left: -25px;
+
+  background-image: url('../assets/svg/decoration-subscription.svg');
+}

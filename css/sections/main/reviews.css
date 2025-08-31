@@ -1,0 +1,30 @@
+.reviews__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(422px, 1fr));
+
+  justify-content: center;
+
+  gap: 1rem;
+}
+
+.review {
+  padding: 50px;
+  height: 364px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+
+.fa-solid {
+  color: var(--review-star-clr);
+}
+
+.review__description {
+  font-size: var(--review-text-fsz);
+}
+
+.review__author {
+  font-size: var(--review-author-fsz);
+  color: var(--trt-clr);
+}

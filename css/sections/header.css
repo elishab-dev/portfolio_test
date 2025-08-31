@@ -1,0 +1,15 @@
+.header {
+  padding-block: 1.625rem;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+.nav-list--header {
+  display: flex;
+  gap: 2.5rem;
+}

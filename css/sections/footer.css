@@ -1,0 +1,19 @@
+.footer__nav {
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.nav-list--footer,
+.nav-list--docs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

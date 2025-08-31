@@ -1,0 +1,46 @@
+.episodes {
+  padding-bottom: 10rem;
+}
+
+.episodes__intro {
+  margin-bottom: 2.5rem;
+}
+
+.episodes__list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+
+.episode__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.episode {
+  display: flex;
+  gap: 3.3rem;
+  padding: 2.5rem;
+}
+
+.episode__tag {
+  font-size: var(--ep-tag-fsz);
+}
+
+.episode img {
+  max-width: 389px;
+}
+
+.episode__tag {
+  padding-inline: 1rem;
+
+  background-color: var(--prm-clr);
+  border-radius: var(--prm-br);
+}
+
+.episode__description,
+.host__description {
+  color: var(--trt-clr);
+}

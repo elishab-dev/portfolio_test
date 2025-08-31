@@ -14,7 +14,7 @@
     <title>Castaway</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header section-centered">
       <nav class="header__nav">
         <a href="/"
           ><img class="logo" src="./assets/svg/logo.svg" alt="Castaway logo"
@@ -36,61 +36,71 @@
       </nav>
     </header>
     <main>
-      <section id="hero-section" class="hero">
-        <img
-          class="hero__img"
-          src="./assets/img/hero-img.jpg"
-          alt="a man leading a podcast"
-        />
-        <h1 class="hero__title">
-          Take your podcast to the
-          <span class="hero__title-line">next</span>
-          <span class="hero__title-accent">level</span>
-        </h1>
-        <p class="hero__socials-listing">Listed on</p>
-        <ul class="socials-list socials-list--hero">
-          <li class="socials-list__item">
-            <a
-              class="socials-list__link socials-list__link--spotify"
-              href="#"
-              aria-label="Spotify"
-            ></a>
-          </li>
-          <li class="socials-list__item">
-            <a
-              class="socials-list__link socials-list__link--pocket-casts"
-              href="#"
-              aria-label="Pocket Casts"
-            ></a>
-          </li>
-          <li class="socials-list__item">
-            <a
-              class="socials-list__link socials-list__link--soundcloud"
-              href="#"
-              aria-label="SoundCloud"
-            ></a>
-          </li>
-          <li class="socials-list__item">
-            <a
-              class="socials-list__link socials-list__link--apple-podcasts"
-              href="#"
-              aria-label="Apple Podcasts"
-            ></a>
-          </li>
-          <li class="socials-list__item">
-            <a
-              class="socials-list__link socials-list__link--overcast"
-              href="#"
-              aria-label="Overcast"
-            ></a>
-          </li>
-        </ul>
+      <section id="hero-section" class="hero section">
+        <div class="section-centered">
+          <div class="hero__layout df-sb decor">
+            <div class="hero__img-wrapper img-rounded">
+              <img
+                class="hero__img"
+                src="./assets/img/hero-img.jpeg"
+                alt="a man leading a podcast"
+              />
+            </div>
+            <div class="hero__content">
+              <h1 class="hero__title">
+                Take your podcast to the
+                <span class="hero__title-line decor">next</span>
+                <span class="hero__title-accent">level</span>
+              </h1>
+              <p class="hero__socials-listing">Listed on</p>
+              <ul class="socials-list socials-list--hero">
+                <li class="socials-list__item">
+                  <a
+                    class="icon socials-list__link--podcast socials-list__link--spotify"
+                    href="#"
+                    aria-label="Spotify link"
+                  ></a>
+                </li>
+                <li class="socials-list__item">
+                  <a
+                    class="icon socials-list__link--podcast socials-list__link--pocket-casts"
+                    href="#"
+                    aria-label="Pocket Casts link"
+                  ></a>
+                </li>
+                <li class="socials-list__item">
+                  <a
+                    class="icon socials-list__link--podcast socials-list__link--soundcloud"
+                    href="#"
+                    aria-label="SoundCloud link"
+                  ></a>
+                </li>
+                <li class="socials-list__item">
+                  <a
+                    class="icon socials-list__link--podcast socials-list__link--apple-podcasts"
+                    href="#"
+                    aria-label="Apple Podcasts link"
+                  ></a>
+                </li>
+                <li class="socials-list__item">
+                  <a
+                    class="icon socials-list__link--podcast socials-list__link--overcast"
+                    href="#"
+                    aria-label="Overcast link"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="episodes-section" class="episodes">
-        <h2 class="title title--prm episodes__title">Latest episodes</h2>
-        <button type="button" class="btn btn--prm episodes__btn">
-          View all episodes
-        </button>
+      <section id="episodes-section" class="episodes section-centered section">
+        <div class="df-sb episodes__intro">
+          <h2 class="title title--prm episodes__title">Latest episodes</h2>
+          <button type="button" class="btn btn--prm episodes__btn">
+            View all episodes
+          </button>
+        </div>
         <ul class="episodes__list">
           <li class="episode__item">
             <article class="bg-rounded episode">
@@ -155,9 +165,13 @@
           </li>
         </ul>
       </section>
-      <section id="host-section" class="host">
+      <section id="host-section" class="host section-centered section">
         <div class="host__content">
-          <button type="button" class="btn btn--scdr host__btn"></button>
+          <button
+            type="button"
+            class="btn btn--scdr host__btn icon"
+            aria-label="More information about the host"
+          ></button>
           <p class="title-intro host__intro">Meet your host</p>
           <h2 class="title title--prm host__title">Jacob Paulaner</h2>
           <p class="host__description">
@@ -169,42 +183,48 @@
             learned along the way.
           </p>
         </div>
-        <img
-          src="./assets/img/host.jpg"
-          class="host__img"
-          alt="Portrait of podcast host Jacob Paulaner"
-        />
-      </section>
-      <section id="subscription-section" class="bg-rounded subscription">
-        <div class="subscription__content">
-          <p class="title-intro subscription__intro">Email Newsletter</p>
-          <h2 class="title title--prm subscription__title">
-            Subscribe for updates
-          </h2>
+        <div class="host__img-wrapper img-rounded">
+          <img
+            src="./assets/img/host.jpg"
+            class="host__img"
+            alt="Portrait of podcast host Jacob Paulaner"
+          />
         </div>
-        <form action="" id="subscription-form" class="subscription__form">
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Name"
-            aria-label="name"
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-            aria-label="email"
-          />
-          <button type="submit" class="btn btn--prm subscription__btn">
-            Submit
-          </button>
-        </form>
       </section>
-      <section id="reviews-section" class="reviews">
+      <section id="subscription-section" class="subscription section">
+        <div class="section-centered">
+          <div class="subscription__layout decor bg-rounded df-sb">
+            <div class="subscription__content">
+              <p class="title-intro subscription__intro">Email Newsletter</p>
+              <h2 class="title title--prm subscription__title">
+                Subscribe for updates
+              </h2>
+            </div>
+            <form action="" id="subscription-form" class="subscription__form">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                aria-label="name"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                aria-label="email"
+              />
+              <button type="submit" class="btn btn--prm subscription__btn">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="reviews-section" class="reviews section-centered section">
         <ul class="reviews__list">
-          <li class="review">
+          <li class="reviews__item">
             <article class="bg-rounded review">
               <div class="review__rating">
                 <i class="fa-solid fa-star"></i>
@@ -289,7 +309,7 @@
                 <i class="fa-solid fa-star"></i>
               </div>
               <blockquote class="review__description">
-                I've upped my game considerably since I started listening
+                I've upped my game considerably
               </blockquote>
               <cite class="review__author">Steven Blast</cite>
             </article>
@@ -297,7 +317,7 @@
         </ul>
       </section>
     </main>
-    <footer id="footer" class="footer">
+    <footer id="footer" class="footer section-centered section">
       <nav class="footer__nav">
         <div class="footer__brand">
           <a href="/"
@@ -306,37 +326,23 @@
           <ul class="socials-list socials-list--footer">
             <li class="socials-list__item">
               <a
-                class="socials-list__link socials-list__link--instagram"
+                class="icon socials-list__link--platform socials-list__link--instagram"
                 href="#"
                 aria-label="Instagram"
               ></a>
             </li>
             <li class="socials-list__item">
               <a
-                class="socials-list__link socials-list__link--x"
+                class="icon socials-list__link--platform socials-list__link--x"
                 href="#"
                 aria-label="X"
               ></a>
             </li>
             <li class="socials-list__item">
               <a
-                class="socials-list__link socials-list__link--facebook"
+                class="icon socials-list__link--platform socials-list__link--facebook"
                 href="#"
                 aria-label="Facebook"
-              ></a>
-            </li>
-            <li class="socials-list__item">
-              <a
-                class="socials-list__link socials-list__link--spotify"
-                href="#"
-                aria-label="Spotify"
-              ></a>
-            </li>
-            <li class="socials-list__item">
-              <a
-                class="socials-list__link socials-list__link--apple-podcasts"
-                href="#"
-                aria-label="Apple Podcasts"
               ></a>
             </li>
           </ul>
@@ -378,35 +384,35 @@
         <ul class="socials-list socials-list--footer">
           <li class="socials__item">
             <a
-              class="socials__link socials__link--spotify"
+              class="icon socials-list__link--podcast socials-list__link--spotify"
               href="#"
               aria-label="Listen on Spotify"
             ></a>
           </li>
           <li class="socials-list__item">
             <a
-              class="socials__link socials__link--pocket-casts"
+              class="icon socials-list__link--podcast socials-list__link--pocket-casts"
               href="#"
               aria-label="Listen on Pocket Casts"
             ></a>
           </li>
           <li class="socials-list__item">
             <a
-              class="socials__link socials__link--soundcloud"
+              class="icon socials-list__link--podcast socials-list__link--soundcloud"
               href="#"
               aria-label="Listen on SoundCloud"
             ></a>
           </li>
           <li class="socials__item">
             <a
-              class="socials__link socials__link--apple-podcasts"
+              class="icon socials-list__link--podcast socials-list__link--apple-podcasts"
               href="#"
               aria-label="Listen on Apple Podcasts"
             ></a>
           </li>
           <li class="socials__item">
             <a
-              class="socials__link socials__link--overcast"
+              class="icon socials-list__link--podcast socials-list__link--overcast"
               href="#"
               aria-label="Listen on Overcast"
             ></a>

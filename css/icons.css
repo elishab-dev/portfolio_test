@@ -1,0 +1,64 @@
+/* header + footer icons */
+
+.icon::before {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.socials-list__link--podcast::before {
+  width: 32px;
+  height: 32px;
+}
+
+.socials-list__link--platform::before {
+  width: 24px;
+  height: 24px;
+}
+
+.socials-list__link--spotify::before {
+  background-image: url('../assets/svg/spotify-icon.svg');
+}
+
+.socials-list__link--pocket-casts::before {
+  background-image: url('../assets/svg/pocket-casts-icon.svg');
+}
+
+.socials-list__link--soundcloud::before {
+  background-image: url('../assets/svg/soundcloud-icon.svg');
+}
+
+.socials-list__link--apple-podcasts::before {
+  background-image: url('../assets/svg/apple-podcasts-icon.svg');
+}
+
+.socials-list__link--overcast::before {
+  background-image: url('../assets/svg/overcast-icon.svg');
+}
+
+/* footer icons */
+.socials-list__link--instagram::before {
+  background-image: url('../assets/svg/instagram-icon.svg');
+}
+
+.socials-list__link--x::before {
+  background-image: url('../assets/svg/x-icon.svg');
+}
+
+.socials-list__link--facebook::before {
+  background-image: url('../assets/svg/facebook-icon.svg');
+}
+
+/* host btn - arrow icon */
+
+.host__btn::before {
+  width: 70px;
+  height: 38px;
+  background-image: url('../assets/svg/arrow-icon.svg');
+}
+
+.host__btn:hover::before {
+  background-image: url('../assets/svg/arrow-icon-hover.svg');
+}

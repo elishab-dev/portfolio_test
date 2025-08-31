@@ -1,0 +1,46 @@
+.hero {
+  padding-block: 2.5rem 0;
+}
+
+.hero__layout {
+  position: relative;
+  gap: 3.75rem;
+}
+
+.hero__img-wrapper {
+  width: 100%;
+  height: 873px;
+  overflow: hidden;
+}
+
+.hero__img {
+  height: 100%;
+  object-position: center 30%;
+}
+
+.hero__title {
+  font-size: var(--hero-title-fsz);
+  line-height: var(--hero-title-lh);
+  letter-spacing: var(--hero-title-ls);
+  margin-bottom: 4.6rem;
+}
+.hero__title-line {
+  position: relative;
+  display: inline-block;
+}
+
+.hero__title-accent {
+  font-weight: var(--bold-fw);
+  font-size: calc(var(--hero-title-fsz) + 0.62rem);
+}
+
+.hero__socials-listing {
+  font-size: var(--trt-fsz);
+  line-height: var(--hero-listing-lh);
+  margin-bottom: 1rem;
+}
+
+.socials-list {
+  display: flex;
+  gap: 1rem;
+}
